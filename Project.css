@@ -7,6 +7,19 @@ html{
     scroll-behavior: smooth;
 }
 
+.ikona a{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    position: fixed;
+    font-size: 40px;
+    color: blue;
+    z-index: 1;
+}
+.ikona a:hover{
+    color: black;
+}
+
 .header{
     width: 100%;
     height: 75px;
@@ -84,7 +97,7 @@ li a {
   
 }
 
-a:hover { 
+.header a:hover { 
          
 color: blue; 
 border-bottom: blue 2px solid;
@@ -96,6 +109,7 @@ border-bottom: blue 2px solid;
     width: 100%;
     height: 100vh;
     background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(0,18,255,1) 49%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 100%);
+
 }
 
 .servisi-1{
@@ -140,14 +154,8 @@ border-bottom: blue 2px solid;
     border-radius: 50px;
     
 }
-/*Faqja e 3-Auto Salloni */
-.faqja3{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(0,18,255,1) 49%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 100%);
-}
 
-
+/*Kontakti butoni*/
 
 
 
@@ -168,49 +176,204 @@ border-bottom: blue 2px solid;
     background: rgba(0, 0, 255, 0.007);
     transition: 1s;
 
-
 }
-
 .kontakto-tani button:hover{
     font-size: 30px;
     cursor: pointer;
     transition: 1s;
 }
-
-/*a{
-    text-decoration: none;
-    display: block;
-    width: auto;
-    padding: 10px 20px;
-    color: black;
-    
-    transition: 2s all ease-in-out;
-
-}*/
-
-
-.shop{
-    height: auto;
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
-    grid-template-rows: 300px;
-    
+/*Faqja e 3-Auto Salloni */
+.titulli {
+    width: 100%;
+    height: 70px;
+    text-align: center;
 }
-.shop img{
+.titulli h1{
+    font-size: 35px;
+}
+
+.faqja3{
+    width: 100%;
+
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(0,18,255,1) 49%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 100%);
+    position: relative;
+}
+.shop {
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    grid-template-rows: 350px;
+ 
+}
+ 
+.shop img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.titulli{
-    width: 100%;
-    height: 30px;
+ 
+.pas1 {
+    width: 500px;
+    margin-left: 70px;
+    height: 150px;
+    overflow: hidden;
+    top: 70px;
+    position: absolute;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 45px;
+    opacity: 0;
+    transition: 1s;
 }
-.titulli h1{
-    font-size: 45px;
+ 
+.pas1:hover {
+    height: 300px;
+    opacity: 1;
+    transition: 1s;
+}
+ 
+.pas1 button {
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    border-bottom: blue solid 2px;
+    padding: 10px;
+    background: rgba(0, 0, 255, 0.007);
+    transition: 1s;
+    color: white;
+ 
+}
+ 
+.pas1 button:hover {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+ 
+ 
+ 
+.shop1 {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    grid-template-rows: 350px; 
+    position: relative;
+ 
+}
+ 
+.shop1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.shop-11 .para1 {
+    position: absolute;
+    top: 20px;
+    width: 500px;
+    margin-left: 70px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 45px;
+    opacity: 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.para1:hover{
+    height: 300px;
+    opacity: 1;
+    transition: 1s;
+}
+ 
+.para1 button{
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    border-bottom: blue solid 2px;
+    padding: 10px;
+    background: rgba(0, 0, 255, 0.007);
+    transition: 1s;
+    color: white;
+ 
+}
+ 
+    .para1 button:hover{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+/*faqja 3 renta */
+.renta {
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 350px;
+    text-align: center;
+ 
+}
+.renta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+/*footeri kontakti*/
+.footer{
+	width: 100%;
+
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	grid-template-rows: 300px;
+    background-color: whitesmoke;
+ 
+}
+.foot1 h6{
+	margin: 0px;
+	color: blue;
+	font-size: 30px;
+ 
+}
+.foot1{
+	border-right: blue solid 1px;
+	border-left: blue solid 1px;
+}
+.footer img{
+	margin-top: 30px;
+	margin-bottom: 0px;
+    width: 200px;
+    height: 170px;
+}
+.foot1 i{
+	font-size: 40px;
+	padding-top: 15px;
+}
+.foot1 i:hover{
+	color: blue;
+}
+.foot1 p{
+	font-size: 25px;
+}
+.foot1 iframe{
+	width: 90%;
+	height: 280px;
+	margin-top: 10px;
 }
 
 
@@ -269,9 +432,27 @@ border-bottom: blue 2px solid;
 
 
 
+.shop {
+    grid-template-rows: 350px 350px;
+    height: 700px;
+}
+.shop1 {
+    grid-template-rows: 350px 350px;
+    height: 700px;
+}
+.shop-11 .para1 {
+    display: none;
+}
 
+.shop-1 .pas1 {
+    display: none;
+    
+}
 
-
+.renta {
+    height: 1900px;
+    padding-bottom: 250px;
+}
 
 
 
